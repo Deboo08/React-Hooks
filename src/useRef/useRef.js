@@ -5,9 +5,10 @@ export default function App () {
     const prevCountRef = useRef();
 
     const handleClick = () => {
-        setCount(count + 1);
-        // 每次点击时，更新prevCountRef的值
+        // 保存上一次的count值
         prevCountRef.current = count;
+        // 更新count值
+        setCount(count + 1);
     }
 
     return (
