@@ -5,9 +5,9 @@ import { Form, Row, Col, Container } from "react-bootstrap";
 export default function App() {
     return (
         <Container>
-            <Row>
+            <div style={{ textAlign: 'center', marginTop: '50px', fontSize: '70px'}}>
                 <b>React Hooks</b>
-            </Row>
+            </div>
         </Container>
     )
 }
